@@ -1,52 +1,65 @@
-# Sales Summary DEMO
+# Sales Summary Demo
 
-## Live Demo
-Check out the live application here: [DEPLOYMENT_URL_PLACEHOLDER](DEPLOYMENT_URL_PLACEHOLDER)
+## 🚀 Live Demo
 
-## Overview
-This project presents a simple, single-page web application designed to fetch sales data from a local `data.csv` file, process it, and display the total sales sum. It's built with modern web technologies, offering a clean and responsive user interface.
+Experience the application live: [**Sales Summary Demo**](https://Shubham30000.github.io/sum-of-sales-demo-test/)
 
-## Features
-*   **Dynamic Data Fetching**: Fetches sales data directly from `data.csv`.
-*   **Sales Calculation**: Automatically parses the CSV and calculates the sum of the 'sales' column.
-*   **Responsive Design**: Utilizes Bootstrap 5 for a responsive and mobile-friendly layout.
-*   **Loading Indicator**: Provides a visual loading spinner while data is being processed.
-*   **Error Handling**: Displays an error message if data fetching or processing fails.
+## 📋 Overview
 
-## Technologies Used
-*   **HTML5**: Structure of the web page.
-*   **CSS3**: Custom styles for the application.
-*   **JavaScript**: For fetching, parsing, and manipulating data.
-*   **Bootstrap 5**: CSS framework for responsive design and UI components.
+This project presents a single-page web application designed to demonstrate dynamic data fetching and processing. It retrieves sales data from an attached `data.csv` file, calculates the total sum of sales, and prominently displays this aggregated value on the page. The application uses Bootstrap 5 for a clean and responsive user interface.
 
-## Setup
-To run this project locally, follow these steps:
+## ✨ Features
 
-1.  **Ensure `data.csv` is in the same directory** as `index.html`. The application expects `data.csv` to be present in the root.
+*   **Dynamic Data Fetching**: Asynchronously loads sales data from a local CSV file.
+*   **Sales Aggregation**: Automatically calculates the sum of the 'sales' column.
+*   **Modern UI**: Utilizes Bootstrap 5 for a responsive and aesthetically pleasing design.
+*   **Single-Page Application (SPA)**: Delivers a seamless user experience within a single HTML page.
+*   **Descriptive Title**: Dynamically sets the page title to 'Sales Summary DEMO'.
 
-2.  **Open `index.html`** in your web browser. You can simply drag and drop the `index.html` file into your browser or right-click and choose "Open with Browser".
+## 🛠️ Technologies Used
 
-## Usage
-Once `index.html` is opened in your browser, the application will automatically:
-1.  Attempt to fetch `data.csv`.
-2.  Parse the CSV content.
-3.  Sum the values in the 'sales' column.
-4.  Display the total sales amount in the designated area.
+*   **HTML5**: For structuring the web content.
+*   **Bootstrap 5**: A popular CSS framework for responsive design and styling, loaded via jsDelivr CDN.
+*   **JavaScript**: For data fetching, parsing, and DOM manipulation to display the sales total.
 
-If `data.csv` is not found, or if the 'sales' column is missing, an error message will be displayed.
+## 📦 Setup
 
-## Project Structure
+To get a local copy up and running, follow these simple steps.
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Shubham30000/sum-of-sales-demo-test.git
+    ```
+2.  **Navigate to the project directory**:
+    ```bash
+    cd sum-of-sales-demo-test
+    ```
+3.  **Open `index.html` in your browser**:
+    Simply open the `index.html` file directly from your file system using any modern web browser. There is no server setup required for this static site.
+
+## 💡 Usage
+
+Upon opening `index.html` in your web browser, the application will automatically perform the following actions:
+
+1.  Fetch the `data.csv` file located in the project's root directory.
+2.  Parse the CSV data, specifically extracting values from the 'sales' column.
+3.  Calculate the total sum of these sales figures.
+4.  Display the computed total inside the `total-sales` element on the page.
+5.  The page title will be updated to 'Sales Summary DEMO'.
+
+No user interaction is required to view the sales summary.
+
+## 📁 Project Structure
+
 ```
-.
+sum-of-sales-demo-test/
 ├── index.html
-├── data.csv
-└── README.md
-└── LICENSE
+└── data.csv
 ```
-*   `index.html`: The main single-page application.
-*   `data.csv`: The sales data in CSV format, expected to contain a 'sales' column.
-*   `README.md`: This project documentation.
-*   `LICENSE`: The MIT License for this project.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+*   `index.html`: The main single-page application file, containing the HTML structure, Bootstrap integration, and JavaScript logic for data fetching and display.
+*   `data.csv`: The comma-separated values file containing the sales data to be processed.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Shubham30000/sum-of-sales-demo-test/blob/main/LICENSE) file for details.
